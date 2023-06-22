@@ -9,3 +9,7 @@ This repo contains the code for my million dollar app.
 * Charlie
 * Emma
 * Doc Hayden
+
+
+Link to other resources:
+* [Markdown Github Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
