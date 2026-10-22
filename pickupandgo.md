@@ -76,6 +76,9 @@ To preview under the real sub-path, serve a directory that has a symlink
 - [x] Portfolio committed and pushed to `main` (2026-10-21).
 - [x] Pages source switched to GitHub Actions. The deploy workflow succeeded, and the live site was
       verified in a browser: page, photo and favicon load, no console errors.
+- [x] Content (2026-10-21): education now lists the PhD as "PhD — In Progress"
+      (no date; the period line is hidden when `period` is empty), and the TACC
+      Profile buttons (hero + contact) and `profile.links.company` were removed.
 
 ## Where to pick up
 
@@ -90,6 +93,15 @@ The site is deployed and working. There's no blocking work. Optional next steps:
 3. Content edits go in `src/lib/portfolio-data.ts`. Pushing to `main` redeploys automatically.
 
 ## Gotchas
+
+- The owner has **not** finished their PhD. Never describe it as completed.
+- `bun install --frozen-lockfile` can't run in Claude's cloud sandbox: the lockfile
+  pins `registry.npmjs.com` tarballs, and the sandbox proxy blocks that host. Google
+  Fonts are blocked there too, so `next build` fails locally. Rely on the CI run
+  (or build on the Mac) to verify.
+- `bun run lint` reports 2 pre-existing errors in unused shadcn files
+  (`ui/carousel.tsx`, `hooks/use-mobile.ts`) when newer eslint-plugin-react-hooks
+  versions resolve. CI doesn't lint.
 
 - `.env` (just `DATABASE_URL` for the unused Prisma setup) is gitignored. Keep it that way.
 - `next.config.ts` sets `typescript.ignoreBuildErrors: true`. That means type errors won't fail

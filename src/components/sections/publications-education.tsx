@@ -66,17 +66,19 @@ export function PublicationsEducation() {
                     {e.field}
                   </p>
                   <p className="mt-2 text-sm text-muted-foreground">{e.org}</p>
-                  <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">
-                    {e.period}
-                  </p>
+                  {e.period && (
+                    <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                      {e.period}
+                    </p>
+                  )}
                 </li>
               ))}
             </ul>
 
             <div className="mt-6 rounded-xl border border-dashed border-border/60 bg-muted/30 p-5">
               <p className="text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground">PhD research</span>{" "}
-                at Dakota State University focused on Information Systems, building
+                <span className="font-semibold text-foreground">PhD in progress</span>{" "}
+                at Dakota State University, focused on Information Systems, building
                 on a Master&apos;s in Applied Mathematics with a Remote Sensing
                 concentration and a Bachelor&apos;s in Computer Science from
                 Elizabeth City State University.

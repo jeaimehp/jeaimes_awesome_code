@@ -1,5 +1,5 @@
 import { profile } from "@/lib/portfolio-data";
-import { Mailbox, Linkedin, Building2, Github, MapPin } from "lucide-react";
+import { Mailbox, Linkedin, Github, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -75,15 +75,6 @@ export function Contact() {
               >
                 <Github className="h-4 w-4" />
                 GitHub
-              </a>
-              <a
-                href={profile.links.company}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-border bg-background/80 px-5 py-3 text-sm font-semibold shadow-sm transition-all hover:border-accent/40 hover:bg-accent/5"
-              >
-                <Building2 className="h-4 w-4" />
-                TACC Profile
               </a>
             </div>
           </div>

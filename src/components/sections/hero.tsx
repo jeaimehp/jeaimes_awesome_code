@@ -1,5 +1,5 @@
 import { profile, stats } from "@/lib/portfolio-data";
-import { MapPin, Mailbox, Linkedin, Building2, Github, ArrowDown } from "lucide-react";
+import { MapPin, Mailbox, Linkedin, Github, ArrowDown } from "lucide-react";
 
 // Prefix static asset URLs with the Next.js basePath so that images
 // resolve correctly when the site is deployed under
@@ -76,15 +76,6 @@ export function Hero() {
               >
                 <Github className="h-4 w-4" />
                 GitHub
-              </a>
-              <a
-                href={profile.links.company}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2 text-sm font-semibold shadow-sm transition-all hover:border-accent/40 hover:bg-accent/5"
-              >
-                <Building2 className="h-4 w-4" />
-                TACC Profile
               </a>
             </div>
           </div>

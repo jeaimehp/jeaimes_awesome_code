@@ -11,7 +11,6 @@ export const profile = {
   photo: "/jeaime-powell.jpg",
   links: {
     linkedin: "https://www.linkedin.com/in/jeaimehp",
-    company: "https://tacc.utexas.edu/about/staff-directory/jeaime-powell/",
     github: "https://github.com/jeaimehp",
   },
   summary:
@@ -341,10 +340,10 @@ export type Education = {
 
 export const education: Education[] = [
   {
-    degree: "Doctor of Philosophy (PhD)",
+    degree: "PhD — In Progress",
     field: "Information Systems",
     org: "Dakota State University",
-    period: "2013",
+    period: "",
   },
   {
     degree: "Master's degree",
