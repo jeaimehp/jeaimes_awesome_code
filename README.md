@@ -4,5 +4,5 @@
 <img src="jeaime-sc26-headshot.png"  width="180">
 
 * Python, SQL, Tableau
-
+* [My resume](Jeaime_Powell-Resume-2025.pdf)
 
